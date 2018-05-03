@@ -1,5 +1,14 @@
 npm install webpack -g
 
+npm install webpack --save-dev
+
 npm init -y
 
 touch .gitignore README.md
+
+
+
+git init
+git add -A
+git commit -m"init"
+
