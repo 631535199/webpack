@@ -11,7 +11,7 @@ module.exports={
         path: __dirname + "/build",
         filename:'bundle.js'
     },
-    //指定webpack-dev-server的配置项
+    //指定webpack-dev-server的配置项   git
     devServer:{
         stats:{colors:true},
         port:9090,//配置端口号
