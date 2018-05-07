@@ -13,6 +13,7 @@ module.exports={
     },
     //指定webpack-dev-server的配置项
     devServer:{
+        stats:{colors:true},
         port:9090,//配置端口号
         contentBase:'./build',//配置文件的根目录
     },
