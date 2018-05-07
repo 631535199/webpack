@@ -10,5 +10,19 @@ module.exports={
     output:{
         path: __dirname + "/build",
         filename:'bundle.js'
+    },
+    //指定webpack-dev-server的配置项
+    devServer:{
+        port:9090,//配置端口号
+        contentBase:'./build',//配置文件的根目录
+    },
+    module:{
+        rules:[ //指定不同文件的加载器
+            {
+                test:/\.js$/, //指定要加载的文件
+                exclude: /node_modules/,
+                loader:'babel-loader'//指定加载器
+            }
+        ]
     }
 }
